@@ -1,0 +1,6 @@
+node_modules/
+mochawesome-report/
+dockerReports/
+cypress/videos/
+cypress/screenshots/
+cypress/results/

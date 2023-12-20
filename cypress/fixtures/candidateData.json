@@ -1,0 +1,9 @@
+{
+    "firstName": "Ali",
+    "lastName": "Ahmed",
+    "role": "Senior QA Lead",
+    "email": "ali.ahmed123@gmail.com",
+    "contactNumber": "0173456783",
+    "resumeFilePath": "cypress/fixtures/resume.pdf"
+  }
+  
