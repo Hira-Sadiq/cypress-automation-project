@@ -1,0 +1,25 @@
+{
+  "validUser": {
+    "username": "Admin",
+    "password": "admin123"
+  },
+  "invalidUser": {
+    "username": "Admininvalid",
+    "password": "admin123"
+  },
+  "employee1": {
+    "firstName": "Hira",
+    "lastName": "Doe",
+    "employeeID": "6666",
+    "jobTitle": "Software Engineer",
+    "nationality": "Indian",
+    "maritalStatus": "Married",
+    "gender":"Male"
+  },
+  "employee2": {
+    "firstName": "Jane",
+    "lastName": "Smith",
+    "employeeID": "789012",
+    "jobTitle": "QA Engineer"
+  }
+}

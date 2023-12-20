@@ -1,0 +1,28 @@
+{
+  "scripts": {
+    "delete:reports": "rm -r cypress/results/* || true",
+    "prereport": "npm run delete:reports",
+    "report": "cypress run --reporter cypress-multi-reporters --reporter-options configFile=reporter-config.json",
+    "mochawesome:merge": "npx mochawesome-merge \"cypress/results/mochawesome/*.json\" > mochawesome.json && npx marge mochawesome.json",
+    "junit:merge": "npx junit-merge -d cypress/results/junit -o cypress/results/junit/result.xml",
+    "cypress:run": "npm run prereport && npx cypress run",
+    "cypress:e2e": "npm run cypress:run; npm run junit:merge; npm run mochawesome:merge",
+    "cypress:docker": "npm run cypress:run && npm run junit:merge && npm run mochawesome:merge",
+    "copy-artifacts": "npm run wait && npm run copy-screenshots && npm run copy-videos",
+    "wait": "sleep 10",
+    "copy-screenshots": "docker cp cypress_test:/app/cypress/screenshots ./dockerReports/screenshots",
+    "copy-videos": "docker cp cypress_test:/app/cypress/videos ./dockerReports/videos"
+    
+
+    
+  },
+  "devDependencies": {
+    "cypress": "^13.6.1",
+    "cypress-multi-reporters": "^1.6.4",
+    "junit-merge": "^2.0.0",
+    "mocha-junit-reporter": "^2.2.1",
+    "mochawesome": "^7.1.3",
+    "mochawesome-merge": "^4.3.0",
+    "mochawesome-report-generator": "^6.2.0"
+  }
+}
