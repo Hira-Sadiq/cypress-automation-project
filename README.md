@@ -1,5 +1,5 @@
 ## cypress-automation-project
-Automating OrangeHRM website with Cypress and JavaScript. Utilizing Page Object Model, generating JUnit and Mochawesome HTML reports, and integrating with Docker and Jenkins for efficient testing workflows.
+Automating OrangeHRM website with Cypress and JavaScript. Utilizing Page Object Model, generating JUnit and Mochawesome HTML reports, and integrating with Docker for efficient testing workflows.
 
 
 ## Link to Website:
@@ -13,8 +13,6 @@ https://opensource-demo.orangehrmlive.com
 - **Cypress 13:** A powerful end-to-end testing framework used for creating and running tests.
 
 - **Docker:** Utilized for containerization, allowing for consistent and isolated test environments.
-
-- **Jenkins:** Employed for continuous integration, automating the testing process and ensuring reliable builds.
 
 - **Mochaawesome Multi Reporter:** Enhanced test reporting using the Mochaawesome reporter for generating HTML reports, providing comprehensive insights into test results.
 
